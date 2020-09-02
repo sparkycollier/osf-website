@@ -30,6 +30,7 @@ hero:
 memberships:
   - membershipsList:
      - name: Community Member
+       type: Community
        features:
         - name: Submit Proposed Summit Talks 
           permission: Allowed
@@ -40,6 +41,7 @@ memberships:
         - name: Vote on Foundation Board Member Elections
           permission: No
      - name: Foundation Member
+       type: Foundation
        features:
          - name: Submit Proposed Summit Talks 
            permission: Allowed

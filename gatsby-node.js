@@ -2,6 +2,10 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
+const myEnv = require("dotenv").config({
+  path: `.env`,
+})
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -64,4 +68,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     })
   }
+}
+
+exports.onCreateWebpackConfig = ({ actions, plugins, loaders }) => {
+  actions.setWebpackConfig({
+    // canvas is a jsdom external dependency
+    externals: ['canvas'],
+    plugins: [
+      plugins.define({
+        'global.GENTLY': false,
+        'global.BLOB': false
+      })
+    ]
+  })
 }

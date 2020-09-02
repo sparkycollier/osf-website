@@ -6,7 +6,7 @@
 // ############ SECTION 1 #################
 
 .join-s1-main {
-  color: $white;
+  color: black;
   margin-bottom: 40px;
 
   // .itemtitle {
@@ -21,6 +21,7 @@
   background-color: $white;
   padding-left: 4em;
   padding-right: 4em;
+
   @media (max-width: $screen-md-min){
     margin-left: 1em;
     margin-right: 1em;
@@ -39,7 +40,7 @@
       font-size: 16px;
       font-family: 'PT Sans', serif;
       margin-bottom: 0px;
-      color: black;
+
       line-height: 1.2em;
       padding: 10px;
     }
@@ -50,11 +51,20 @@
       font-size: 16px;
       font-family: 'PT Sans', serif;
       margin-bottom: 0px;
-      color: black;
+
       line-height: 1.2em;
       padding: 10px;
     }
   }
+
+  .membership-permissions{
+
+  }
+
+  .membership-title {
+    padding: 10px;
+  }
+
 }
 
 .section-bg-blue-child {

@@ -7,10 +7,8 @@ import Layout from '../components/Layout'
 import Header from '../components/Header'
 import TopBar from '../components/TopBar';
 import Navbar from '../components/Navbar';
-import LinkComponent from '../components/LinkComponent'
-
+import envVariables from '../utils/envVariables';
 import metadata from '../content/site-metadata.json'
-import {CompaniesPageTemplate} from "./companies-page";
 
 export const JoinPageTemplate = ({
                                      seo,
@@ -22,7 +20,6 @@ export const JoinPageTemplate = ({
                                      contentComponent
                                  }) => {
     const PageContent = contentComponent || Content
-
     return (
         <div>
             {seo &&
@@ -64,21 +61,27 @@ export const JoinPageTemplate = ({
                             <div className="hero">
                                 <p><strong>{hero.title} : </strong>{hero.description}</p>
                             </div>
-
+                            <div className="membership-title">
+                                <h3>{memberships[0].title}</h3>
+                                <p>{memberships[0].text}</p>
+                                <p>{memberships[0].subTitle}</p>
+                            </div>
                             <div className="columns">
                                 {
                                     memberships.map((tier, index) => {
                                     return  tier.membershipsList.map((membership, index) => {
                                         return (
                                            <div className="column">
-                                               <h1>{membership.name}</h1>
-                                               <ul>
+                                               <strong>{membership.name}</strong>
+                                               <ul className="membership-permissions">
                                                    {
                                                        membership.features.map((feature, index) => {
                                                            return (<li>{feature.name} : {feature.permission}</li>)
                                                        })
                                                    }
                                                </ul>
+                                               <a className="button" role="button"
+                                                  href={`${envVariables.IDP_BASE_URL}/auth/register?client_id=${envVariables.OAUTH2_CLIENT_ID}&redirect_uri=${encodeURI(`#?membership_type=${membership.type}`)}`}>{membership.name}</a>
                                            </div>
                                         )
                                     })
