@@ -28,4 +28,4 @@ Donations to Adam and Ellis' college fund can be made through [Ugift](https://ww
 
 **Wildife SOS Donation**
 
-Donations can be made in Dan Kohn's memory to the [Wildlife SOS](https://donatenow.networkforgood.org/1432730). Please leave a note mentioning Dan in your donation. 
+Donations can be made in Dan Kohn's memory to the [Wildlife SOS](https://donatenow.networkforgood.org/1432730). Please leave a note mentioning Dan in your donation.
