@@ -3,7 +3,7 @@ templateKey: blog-post
 title: >-
   Remembering Dan Kohn
 author: Jonathan Bryce
-date: 2020-19-6T13:30:56.289Z
+date: 2020-11-6T13:30:56.289Z
 category: 
   - label: Community
     id: category-h2Ztx9rpD
@@ -28,4 +28,4 @@ Donations to Adam and Ellis' college fund can be made through [Ugift](https://ww
 
 **Wildife SOS Donation**
 
-Donations can be made in Dan Kohn's memory to the [Wildlife SOS](https://https://donatenow.networkforgood.org/1432730). Please leave a note mentioned Dan in your donation. 
+Donations can be made in Dan Kohn's memory to the [Wildlife SOS](https://https://donatenow.networkforgood.org/1432730). Please leave a note mentioning Dan in your donation. 
